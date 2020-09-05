@@ -1,0 +1,94 @@
+*
+{
+ margin: 0;
+ padding: 0;
+}
+.contactcard
+ {
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+
+  .swiper-container
+   {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    
+  }
+
+  .swiper-slide 
+  {
+      
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0); 
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006); 
+    
+  }
+
+  .shape{
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    animation: clip 12s infinite linear;
+  }
+
+  .sm1,.d1,
+  .sm2,.d2,
+  .sm3,.d3,
+  .sm4,.d4,
+  .sm5,.d5,
+  .sm6,.d6,
+  .sm7,.d7,
+  .sm8,.d8,
+  .sm9,.d9
+  {
+    
+    display: none;
+  }
+  
+  .ss1:hover .sm1,
+  .ss1:hover  .d1,
+  .ss2:hover .sm2,
+  .ss2:hover  .d2,
+  .ss3:hover .sm3,
+  .ss3:hover  .d3,
+  .ss4:hover .sm4,
+  .ss4:hover  .d4,
+  .ss5:hover .sm5,
+  .ss5:hover  .d5,
+  .ss6:hover .sm6,
+  .ss6:hover  .d6, 
+  .ss7:hover .sm7,
+  .ss7:hover  .d7,
+  .ss8:hover .sm8,
+  .ss8:hover  .d8,
+  .ss9:hover .sm9,
+  .ss9:hover  .d9
+  {
+    color: brown;
+    position: absolute;
+      display: block;
+  }
+
+  .shape:hover{
+      transform: scale(1.05);
+  }
+
+  @keyframes clip {
+    0% {
+      clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);}
+    50% {
+      clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);  
+  }
+     75% {
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);   
+  }
+  }
